@@ -46,9 +46,9 @@ def test_dataset(model, test_data, device):
                 img_pre[k] = torch.clip(net_pre[0], 0., 1.)
                 k += 1
 
-    show_img(img_blur[:, :, 60:, 62:-38], 'dataset_blur')
-    show_img(img_gt[:, :, 60:, 62:-38], 'dataset_gt')
-    show_img(img_pre[:, :, 60:, 62:-38], 'dataset_mwdn')
+    show_img(img_blur, 'dataset_blur')
+    show_img(img_gt, 'dataset_gt')
+    show_img(img_pre, 'dataset_mwdn')
     time_loss = total_time / len(test_data)
     img_lpips = img_lpips / len(test_data)
     img_psnr = img_psnr / len(test_data)
