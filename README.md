@@ -8,10 +8,15 @@ git clone https://github.com/IOE8AILab/MWDNs.git
 The code is developed using Python 3.9, PyTorch 1.9.0. The GPU we used is NVIDIA RTX 3090. 
 
 ### Dataset 
-Download [dateset](https://drive.google.com/file/d/1wP3CWahU8Mxqod2F-VcUvnGz33XB9wwF/view?usp=share_link)：
-```
-cd SH-CNN/TurbPhaseGeneration/
-matlab -nodesktop -nosplash -r TurbPhaseGenerate
+Download [dateset](https://drive.google.com/file/d/1wP3CWahU8Mxqod2F-VcUvnGz33XB9wwF/view?usp=share_link)
+You should then have the following directory structure:
+```bash
+.
+|-- blur
+|-- codes
+|   |-- blur_capture_real_object
+|   `-- psf
+|-- gt
 ```
 
 ### Training
